@@ -1,0 +1,120 @@
+:root {
+    --primaria: #e67e22;
+    --primaria-hover: #d35400;
+    --fundo: #f4f6f8;
+    --texto: #333333;
+    --borda: #dddddd;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+header {
+    background-color: var(--texto);
+    color: var(--branco);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color: var(--primaria);
+    border-color: var(--primaria);
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.aba {
+    display: none;
+    background-color: var(--branco);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.aba.ativa {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primaria);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--borda);
+}
+
+th {
+    background-color: #f9fafb;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input, select {
+    padding: 0.75rem;
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--primaria);
+    color: var(--branco);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: var(--primaria-hover);
+}
